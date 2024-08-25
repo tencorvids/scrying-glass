@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "scrying-glass"
+version = "0.1.0"
+description = "A Magic: The Gathering card identification program using OpenCV"
+authors = ["rew <rew@tencorvids.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+opencv-python = "^4.8.0"
+numpy = "^1.24.0"
+fastapi = "^0.101.0"
+psycopg2-binary = "^2.9.6"
+python-dotenv = "^1.0.0"
+requests = "^2.31.0"
+Pillow = "^10.0.0"
+imagehash = "^4.3.1"
+python-multipart = "^0.0.6"
+uvicorn = "^0.23.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+generate-database = "scripts.generate_database:main"
+start-server = "uvicorn src.main:app --reload"

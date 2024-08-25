@@ -1,0 +1,57 @@
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+
+# Poetry
+.venv/
+dist/
+
+# Nix
+result/
+
+# Virtual environment
+venv/
+env/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+
+# Pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# Logs
+*.log
+
+# Build output
+build/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
